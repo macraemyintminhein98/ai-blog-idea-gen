@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💡 AI Blog Idea Generator</title>
+    <meta name="description" content="Generate unique blog post ideas and outlines in seconds.">
+    <meta name="keywords" content="AI, blog ideas, content generator, writing tools">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 20px; background-color: #f7f9fc; color: #333; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        .container { background-color: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 30px; max-width: 700px; width: 100%; text-align: center; margin-top: 50px; }
+        h1 { color: #2c3e50; margin-bottom: 10px; font-size: 2.2em; }
+        p { color: #7f8c8d; margin-bottom: 25px; line-height: 1.6; }
+        form { display: flex; flex-direction: column; gap: 15px; margin-bottom: 25px; }
+        input[type="text"] { padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1em; width: calc(100% - 30px); }
+        button { background-color: #007bff; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: background-color 0.2s ease; }
+        button:hover { background-color: #0056b3; }
+        #results { text-align: left; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; }
+        #results h2 { color: #2c3e50; font-size: 1.5em; margin-bottom: 15px; }
+        .idea { background-color: #ecf0f1; border-left: 5px solid #007bff; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .idea strong { display: block; margin-bottom: 5px; font-size: 1.1em; color: #34495e; }
+        .price-cta { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+        .price-cta a { background-color: #28a745; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-size: 1.2em; font-weight: bold; transition: background-color 0.2s ease; display: inline-block; }
+        .price-cta a:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💡 AI Blog Idea Generator</h1>
+        <p>Struggling with content?<br>Enter a few keywords and get unique blog post titles and outlines instantly!</p>
+        <form onsubmit="event.preventDefault(); alert('Please integrate with a backend service to use this feature. This is a frontend demo.');">
+            <input type="text" id="keywords" placeholder="E.g., 'sustainable living, reduce plastic, eco-friendly'" required>
+            <button type="submit">Generate Ideas</button>
+        </form>
+        <div id="results" style="display:none;">
+            <h2>Your Blog Ideas:</h2>
+            <div class="idea">
+                <strong>Title Idea: 10 Simple Swaps for a Sustainable Home: Your Guide to Eco-Friendly Living</strong>
+                Outline: This post will cover easy changes to make around the house, from kitchen to bathroom, to significantly reduce your environmental footprint.
+            </div>
+            <div class="idea">
+                <strong>Title Idea: Beyond the Bag: Creative Ways to Reduce Plastic Waste in Your Daily Life</strong>
+                Outline: Explore innovative methods and products to cut down on single-use plastics, with practical tips for shopping, eating, and travel.
+            </div>
+        </div>
+        <div class="price-cta">
+            <p>Unlock unlimited ideas for your blog.</p>
+            <a href="#">Get Access Now - $9.99 One-Time Payment</a>
+        </div>
+    </div>
+    <script>
+        // This is a static demo. In a real app, this would send data to a backend.
+        // The form's onsubmit handler prevents actual submission and shows an alert.
+        document.querySelector('form').addEventListener('submit', function(){
+            document.getElementById('results').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
