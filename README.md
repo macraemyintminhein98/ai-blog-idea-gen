@@ -1,11 +1,5 @@
-# AI Blog Idea Generator
+# Blog Idea AI
 
-Struggling to find fresh content ideas? The AI Blog Idea Generator helps bloggers, writers, and small business owners generate unique blog post titles and one-sentence outlines in seconds. Simply input a few keywords, and let AI spark your next viral post!
+Quickly generate compelling blog post ideas (titles + brief descriptions) with AI. Simply enter a keyword and get 3-5 unique content concepts. Perfect for bloggers, writers, and marketers seeking inspiration. 
 
-**Features:**
-*   **Keyword-based Idea Generation:** Provide keywords relevant to your niche.
-*   **Unique Title & Outline Output:** Get 5-10 distinct blog post titles with a brief outline.
-*   **Simple Interface:** Clean and easy-to-use web application.
-*   **One-Time Purchase:** Pay once, use forever (limited tokens per request for initial version).
-
-This project is a micro-SaaS aiming to solve the common 'writer's block' for content creators. Future updates may include more generation options, historical idea tracking, and integration with more AI models.
+**Note:** This `index.html` file provides a frontend placeholder. A full implementation would involve a backend to integrate with the OpenAI API and a secure payment gateway (e.g., Stripe).
